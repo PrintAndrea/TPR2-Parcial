@@ -2,6 +2,9 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 
+import quotesRoutes from "./scr/routes/quotes.routes.js";
+
+
 const app = express();
 const morganType = ':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length]';;
 
